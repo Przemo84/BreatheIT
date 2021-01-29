@@ -10,7 +10,7 @@ const ButtonWithContentComponent = (props) => {
 
     return (
         <TouchableOpacity style={styles.touchableCard} onPress={props.onPress}>
-            <View style={{ flexDirection: 'row', minHeight: 100 }}>
+            <View style={{ flexDirection: 'row', minHeight: 100, flexWrap:'wrap' }}>
                 <View style={{ paddingLeft: 34, flex: 6, flexDirection: 'column', alignContent: 'flex-start', padding: 5 }}>
                     <View style={{ paddingTop: 10, paddingBottom: 5, flex: 1 }}>
                         <Text style={{ opacity: 8, color: 'white', fontSize: 24 }}>{props.title}</Text>
@@ -20,7 +20,7 @@ const ButtonWithContentComponent = (props) => {
                     </View>
                 </View>
                 <View style={styles.rightIconViewStyle}>
-                    <Image source={require('../icons/forward.png')} style={styles.rightIconStyle} />
+                    <Image source={require('../../icons/forward.png')} style={styles.rightIconStyle} />
                 </View>
             </View>
         </TouchableOpacity>
@@ -51,9 +51,9 @@ const styles = StyleSheet.create({
         paddingBottom: 10,
         flex: 1
     },
-    contentTextStyle: {
-        color: 'white',
-        fontSize: 16
+    contentTextStyle:{ 
+        color: 'white', 
+        fontSize: 16 
     }
 });
 

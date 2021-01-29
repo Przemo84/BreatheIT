@@ -15,7 +15,7 @@ const ButtonWithoutContentComponent = (props) => {
                     <Text style={{ opacity: 25, color: 'white', fontSize: 22 }}>{props.title}</Text>
                 </View>
                 <View style={styles.rightIconViewStyle}>
-                    <Image source={require('../icons/forward.png')} style={styles.rightIconStyle} />
+                    <Image source={require('../../icons/forward.png')} style={styles.rightIconStyle} />
                 </View>
             </View>
         </TouchableOpacity>
