@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Button, StyleSheet, ImageBackground } from 'react-native';
 
 import CalmMain from '../calm/CalmMain';
-import ButtonWithContentComponent from '../../components/ButtonWithContentComponent';
+import ButtonWithContentComponent from '../../components/nav-buttons/ButtonWithContentComponent';
 
 
 const Home = (props, navigation) => {

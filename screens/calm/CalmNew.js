@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Button, Text, ImageBackground } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import ButtonWithContentCompotent from '../../components/ButtonWithContentComponent';
+import ButtonWithContentCompotent from '../../components/nav-buttons/ButtonWithContentComponent';
 
 const image = require('../../assets/bg-lake.jpg');
 

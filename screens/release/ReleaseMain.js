@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet,ImageBackground } from 'react-native';
 
-import ButtonWithContentComponent from '../../components/ButtonWithContentComponent'
+import ButtonWithContentComponent from '../../components/nav-buttons/ButtonWithContentComponent'
 
 const ReleaseMain = (props) => {
 
