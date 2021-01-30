@@ -117,7 +117,8 @@ function App() {
           options={{
             tabBarLabel: 'MORE',
             tabBarIcon: ({ tintColor }) => (
-              <Icon name="instagram" size={25} color='white' />
+              <Image source={require('./icons/more.png')}
+              style={{width: 23, height: 23, tintColor: tintColor}} />  
             ),
           }}
         />
@@ -127,8 +128,7 @@ function App() {
           options={{
             tabBarLabel: 'FAVOURITE',
             tabBarIcon: ({ tintColor }) => (
-              <Image source={require('./icons/more.png')}
-              style={{width: 23, height: 23, tintColor: tintColor}} />  
+              <Icon name="instagram" size={25} color='white' />
             ),
           }}
         />
