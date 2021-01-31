@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { View, Text, Image, Button, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
-import Icon from 'react-native-vector-icons/AntDesign';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 const ButtonWithoutContentComponent = (props) => {
 
     const { title, setTitle } = useState('');
     const { content, setContent } = useState('');
-
 
     return (
         <TouchableOpacity style={styles.touchableCard} onPress={props.onPress}>
@@ -15,7 +13,7 @@ const ButtonWithoutContentComponent = (props) => {
                     <Text style={{ opacity: 25, color: 'white', fontSize: 22 }}>{props.title}</Text>
                 </View>
                 <View style={styles.rightIconViewStyle}>
-                    <Image source={require('../../icons/forward.png')} style={styles.rightIconStyle} />
+                    <Image source={require('../../../icons/forward.png')} style={styles.rightIconStyle} />
                 </View>
             </View>
         </TouchableOpacity>

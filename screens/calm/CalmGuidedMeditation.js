@@ -1,12 +1,13 @@
 import React from 'react';
 import { View, Image, StyleSheet, Button, Text, ImageBackground } from 'react-native';
-import ButtonPlayComponent from '../../components/buttons/play-buttons/ButtonPlayComponent';
+import ButtonFeatureComponent from '../../components/buttons/buttons/ButtonFeatureComponent';
 
 const image = require('../../assets/bg-lake.jpg');
 const imageButton1 = require('../../assets/images/calm-alpine-alps.jpg');
 const imageButton2 = require('../../assets/images/calm-clouds-water.jpg');
 const imageButton3 = require('../../assets/images/calm-mountains.jpg');
 const imageButton4 = require('../../assets/images/calm-beach-rocks.jpg');
+const playButton = require('../../icons/play-button.png');
 
 const CalmGuidedMeditation = (props) => {
   return (
@@ -22,18 +23,31 @@ const CalmGuidedMeditation = (props) => {
       <View style={styles.buttonsWrapper}>
         <View style={styles.buttonTopRow}>
           <View style={styles.halfWidth}>
-            <ButtonPlayComponent image={imageButton1} title='alternative nostril breathing' /* onPress={() => props.navigation.navigate('CalmGuidedMeditation')} */ />
+            <ButtonFeatureComponent
+              image={imageButton1}
+              title='alternative nostril breathing'
+              frequency='174 Hz' /* onPress={() => props.navigation.navigate('CalmGuidedMeditation')} */ />
           </View>
           <View style={styles.halfWidth} >
-            <ButtonPlayComponent image={imageButton2} title='' /* onPress={() => props.navigation.navigate('CalmGuidedMeditation')}*/ />
+            <ButtonFeatureComponent
+              image={imageButton2}
+              frequency='584 Hz'
+              /* onPress={() => props.navigation.navigate('CalmGuidedMeditation')}*/ />
           </View>
         </View>
         <View style={styles.buttonBottomRow}>
           <View style={styles.halfWidth}>
-            <ButtonPlayComponent image={imageButton3} title='alternative nostril breathing' /* onPress={() => props.navigation.navigate('CalmGuidedMeditation')} */ />
+            <ButtonFeatureComponent
+              image={imageButton3}
+              title='alternative nostril breathing'
+              play={playButton}
+              /* onPress={() => props.navigation.navigate('CalmGuidedMeditation')} */ />
           </View>
           <View style={styles.halfWidth} >
-            <ButtonPlayComponent image={imageButton4} title='' /* onPress={() => props.navigation.navigate('CalmGuidedMeditation')}*/ />
+            <ButtonFeatureComponent
+              image={imageButton4}
+              play={playButton}
+               /* onPress={() => props.navigation.navigate('CalmGuidedMeditation')}*/ />
           </View>
         </View>
       </View>

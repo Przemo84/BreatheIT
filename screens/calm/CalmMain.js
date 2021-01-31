@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, Button, ImageBackground, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 
-import ButtonWithoutContentComponent from '../../components/nav-buttons/ButtonWithoutContentComponent'
+import ButtonWithoutContentComponent from '../../components/buttons/nav-buttons/ButtonWithoutContentComponent'
 
 function CalmMain(props) {
 

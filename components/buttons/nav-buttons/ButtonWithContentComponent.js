@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Image, Button, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
-import Icon from 'react-native-vector-icons/AntDesign';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 const ButtonWithContentComponent = (props) => {
 
@@ -20,7 +19,7 @@ const ButtonWithContentComponent = (props) => {
                     </View>
                 </View>
                 <View style={styles.rightIconViewStyle}>
-                    <Image source={require('../../icons/forward.png')} style={styles.rightIconStyle} />
+                    <Image source={require('../../../icons/forward.png')} style={styles.rightIconStyle} />
                 </View>
             </View>
         </TouchableOpacity>
