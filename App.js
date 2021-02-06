@@ -14,6 +14,8 @@ import Home from './screens/home/Home';
 import CalmMain from './screens/calm/CalmMain';
 import UnderstandMain from './screens/understand/UnderstandMain';
 import ReleaseMain from './screens/release/ReleaseMain';
+import ReleaseBioExcercise from './screens/release/ReleaseBioExcercise';
+import ReleaseYoga from './screens/release/ReleaseYoga';
 import CalmGuidedMeditation from './screens/calm/CalmGuidedMeditation';
 import CalmAcupressure from './screens/calm/CalmAcupressure';
 import CalmNew from './screens/calm/CalmNew';
@@ -53,6 +55,8 @@ const UnderstandStackScreen = () => (
 const ReleaseStackScreen = () => (
   <ReleaseStack.Navigator>
     <ReleaseStack.Screen name="ReleaseMain" component={ReleaseMain} />
+    <ReleaseStack.Screen name="ReleaseBioExcercise" component={ReleaseBioExcercise} />
+    <ReleaseStack.Screen name="ReleaseYoga" component={ReleaseYoga} />
   </ReleaseStack.Navigator>
 )
 
